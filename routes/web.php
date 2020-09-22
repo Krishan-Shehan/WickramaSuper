@@ -22,3 +22,10 @@ Route::view('/', 'app');
 Route::view('/Dashboard', 'app');
 Route::view('/Checkout', 'app');
 Route::view('/DeliveryPersons','app');
+Route::view('/stocks','app');
+Route::view('/SalesManagerDashboard', 'app');
+Route::view('/EmployeeManagerDashboard', 'app');
+Route::view('/MarketingManagerDashboard', 'app');
+Route::view('/StockManagerDashboard', 'app');
+Route::view('/SupplierManagerDashboard', 'app');
+

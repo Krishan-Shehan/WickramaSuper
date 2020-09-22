@@ -9,7 +9,7 @@ import Header from "../header/Header";
 import NewOrders from "../tables/NewOrders";
 import OnlineDeliveryPersons from "../tables/OnlineDeliveryPersons";
 import OngoingOrders from "../tables/OngoingOrders";
-import OrderTable from "../OrderTable";
+import OrderTable from "../tables/OrderTable";
 import Slider from "../slider/Slider"
 import NewOrdersWidget from "../widgets/NewOrdersWidget";
 import OngoingOrdersWidget from "../widgets/OngoingOrdersWidget";

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DeliveryPersonController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\StockController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('orders',[OrderController::class, 'index']);
 Route::get('DeliveryPersons',[DeliveryPersonController::class,'index']);
+Route::get('stocks',[StockController::class, 'index']);
