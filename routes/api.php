@@ -3,6 +3,9 @@
 use App\Http\Controllers\DeliveryPersonController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\StockController;
+use App\Http\Controllers\SalesController;
+use App\Http\Controllers\ExpenseController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +27,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('orders',[OrderController::class, 'index']);
 Route::get('DeliveryPersons',[DeliveryPersonController::class,'index']);
 Route::get('stocks',[StockController::class, 'index']);
+Route::get('Sales',[SalesController::class,'index']);
+Route::get('Expenses',[ExpenseController::class,'index']);
+Route::get('Payment',[PaymentController::class,'index']);
+

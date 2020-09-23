@@ -17,7 +17,7 @@ const drawerWidth = 240
 
 const user = {
     avatar: './avatar_12.png',
-    jobTitle: 'Sales Manger',
+    jobTitle: 'Sales Manager',
     name: 'Nethmi Nimesha'
 };
 
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function Slider() {
+function SalesManagerSlider() {
     const classes = useStyles();
     return(
         <Drawer
@@ -74,14 +74,36 @@ function Slider() {
                 </Box>
                 <Divider />
                 <List component="nav" aria-label="main mailbox folders">
-
                     <ListItem button>
                         <ListItemIcon>
                             <DashboardIcon />
                         </ListItemIcon>
                         <ListItemText primary="Dashboard" />
                     </ListItem>
-
+                    <ListItem button>
+                        <ListItemIcon>
+                            <ReceiptIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Sales" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <PersonPinIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Payments" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <GroupIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Overhead Expenses" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <CalendarTodayIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Calender" />
+                    </ListItem>
                 </List>
                 <Divider/>
                 <ListItem button>
@@ -96,4 +118,4 @@ function Slider() {
     );
 }
 
-export default Slider;
+export default SalesManagerSlider;

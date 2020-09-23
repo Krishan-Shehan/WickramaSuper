@@ -29,3 +29,6 @@ Route::view('/MarketingManagerDashboard', 'app');
 Route::view('/StockManagerDashboard', 'app');
 Route::view('/SupplierManagerDashboard', 'app');
 
+Route::view('/Expenses','app');
+Route::view('/Sales','app');
+Route::view('/Payments','app');
