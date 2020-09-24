@@ -8,6 +8,7 @@ use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\LeaveController;
+use App\Http\Controllers\CustomerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -35,4 +36,5 @@ Route::get('Payments',[PaymentController::class,'index']);
 Route::get('Employees',[EmployeeController::class,'index']);
 Route::get('Leaves',[LeaveController::class,'index']);
 Route::get('Stocks',[StockController::class,'index']);
+Route::get('Customers',[CustomerController::class,'index']);
 

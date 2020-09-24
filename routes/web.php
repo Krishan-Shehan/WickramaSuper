@@ -28,6 +28,7 @@ Route::view('/EmployeeManagerDashboard', 'app');
 Route::view('/MarketingManagerDashboard', 'app');
 Route::view('/StockManagerDashboard', 'app');
 Route::view('/SupplierManagerDashboard', 'app');
+Route::view('/CustomerManagerDashboard', 'app');
 
 Route::view('/Expenses','app');
 Route::view('/Sales','app');
@@ -35,4 +36,5 @@ Route::view('/Payments','app');
 Route::view('/Employees','app');
 Route::view('/Leaves','app');
 Route::view('/Stocks','app');
+Route::view('/Customers','app');
 
