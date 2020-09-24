@@ -14,8 +14,8 @@ class StockController extends Controller
      */
     public function index()
     {
-        $expense = Stock :: all();
-        return $expense -> toJson();        //taking to array
+        $stock = Stock :: all();
+        return $stock -> toJson();        //taking to array
     }
 
     /**

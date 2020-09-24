@@ -11,6 +11,10 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import SettingsIcon from '@material-ui/icons/Settings';
+import ReceiptIcon from '@material-ui/icons/Receipt';
+import PersonPinIcon from '@material-ui/icons/PersonPin';
+import GroupIcon from '@material-ui/icons/Group';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
 const drawerWidth = 240

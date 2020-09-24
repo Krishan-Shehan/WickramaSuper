@@ -13,11 +13,12 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import SettingsIcon from '@material-ui/icons/Settings';
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
+
 const drawerWidth = 240
 
 const user = {
     avatar: './avatar_12.png',
-    jobTitle: 'Sales Manger',
+    jobTitle: 'Employee Manger',
     name: 'Nipuni Nadeeshani'
 };
 
@@ -79,7 +80,7 @@ function Slider() {
                         <ListItemIcon>
                             <DashboardIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Dashboard" />
+                        <ListItemText primary="Employees" />
                     </ListItem>
 
 

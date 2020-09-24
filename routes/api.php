@@ -6,6 +6,8 @@ use App\Http\Controllers\StockController;
 use App\Http\Controllers\SalesController;
 use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\LeaveController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -29,5 +31,7 @@ Route::get('DeliveryPersons',[DeliveryPersonController::class,'index']);
 Route::get('stocks',[StockController::class, 'index']);
 Route::get('Sales',[SalesController::class,'index']);
 Route::get('Expenses',[ExpenseController::class,'index']);
-Route::get('Payment',[PaymentController::class,'index']);
+Route::get('Payments',[PaymentController::class,'index']);
+Route::get('Employees',[EmployeeController::class,'index']);
+Route::get('Leaves',[LeaveController::class,'index']);
 
