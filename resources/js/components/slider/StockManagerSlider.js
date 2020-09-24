@@ -18,7 +18,7 @@ const drawerWidth = 240
 const user = {
     avatar: './avatar_12.png',
     jobTitle: 'Stock Manger',
-    name: 'Sevidu'
+    name: 'Sevindu'
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -79,7 +79,7 @@ function Slider() {
                         <ListItemIcon>
                             <DashboardIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Dashboard" />
+                        <ListItemText primary="Stock" />
                     </ListItem>
 
                 </List>

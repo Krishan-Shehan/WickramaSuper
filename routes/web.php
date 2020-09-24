@@ -34,4 +34,5 @@ Route::view('/Sales','app');
 Route::view('/Payments','app');
 Route::view('/Employees','app');
 Route::view('/Leaves','app');
+Route::view('/Stocks','app');
 

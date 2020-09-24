@@ -34,4 +34,5 @@ Route::get('Expenses',[ExpenseController::class,'index']);
 Route::get('Payments',[PaymentController::class,'index']);
 Route::get('Employees',[EmployeeController::class,'index']);
 Route::get('Leaves',[LeaveController::class,'index']);
+Route::get('Stocks',[StockController::class,'index']);
 
