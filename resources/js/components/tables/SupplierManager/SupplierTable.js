@@ -44,9 +44,9 @@ export default function SupplierTable() {
 
     const columns = [
         {title: "ID", field: "id"},
-        {title: "Product name", field: "supplier_name"},
-        {title: "Quantity", field: "supplier_add"},
-        {title: "Cost price", field: "supplier_brand"}
+        {title: "Supplier name", field: "supplier_name"},
+        {title: "Supplier Address", field: "supplier_add"},
+        {title: "Supplier Brand", field: "supplier_brand"}
     ];
 
     const [data, setData] = useState([]); //table data
