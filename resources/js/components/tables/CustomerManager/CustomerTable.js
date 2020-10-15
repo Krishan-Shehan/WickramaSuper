@@ -69,6 +69,10 @@ const handleRowUpdate = (newData, oldData, resolve) => {
     //validation
     let errorList = []
 
+    if(newData.id === ""){
+        errorList.push("Please enter id")
+    }
+
     if(errorList.length < 2){
         console.log(newData.id);
         axios.put('/api/customers/'+newData.id, newData)
