@@ -7,7 +7,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Header from "../header/Header";
 import Slider from "../slider/CustomerSlider"
-import customerTable from "../tables/CustomerManager/customerTable";
+import CustomerTable from "../tables/CustomerManager/CustomerTable";
 
 
 
@@ -115,7 +115,7 @@ function CustomerManagerDashboard() {
                                 xl={3}
                                 xs={12}
                             >
-                                <customerTable />
+                                <CustomerTable />
                             </Grid>
 
 

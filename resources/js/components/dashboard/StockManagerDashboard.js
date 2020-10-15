@@ -7,7 +7,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Header from "../header/Header";
 import Slider from "../slider/StockManagerSlider";
-import stockTable from "../tables/StockManager/stockTable";
+import StockTable from "../tables/StockManager/StockTable";
 
 
 
@@ -129,7 +129,7 @@ function StockManagerDashboard() {
                                 xl={3}
                                 xs={12}
                             >
-                                <stockTable />
+                                <StockTable />
                             </Grid>
 
 

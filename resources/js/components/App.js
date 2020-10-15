@@ -9,6 +9,7 @@ import EmployeeManagerDashboard from "./dashboard/EmployeeManagerDashboard";
 import MarketingManagerDashboard from "./dashboard/MarketingManagerDashboard";
 import StockManagerDashboard from "./dashboard/StockManagerDashboard";
 import SupplierManagerDashboard from "./dashboard/SupplierManagerDashboard";
+import CustomerManagerDashboard from "./dashboard/CustomerManagerDashboard";
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                         <Route exact path='/MarketingManagerDashboard' component={MarketingManagerDashboard}/>
                         <Route exact path='/StockManagerDashboard' component={StockManagerDashboard}/>
                         <Route exact path='/SupplierManagerDashboard' component={SupplierManagerDashboard}/>
+                        <Route exact path='/CustomerManagerDashboard' component={CustomerManagerDashboard}/>
                         <Route exact path='/Checkout' component= {Checkout}/>
                     </Switch>
                 </div>

@@ -86,7 +86,7 @@ function SalesManagerSlider() {
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
-                            <ReceiptIcon />
+                          <ReceiptIcon />
                         </ListItemIcon>
                         <ListItemText primary="Sales" />
                     </ListItem>

@@ -6,7 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Header from "../header/Header";
-
+import OfferTable from "../tables/MarketingManager/OfferTable";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -115,7 +115,7 @@ function MarketingManagerDashboard() {
                                 xl={3}
                                 xs={12}
                             >
-
+                                <OfferTable />
                             </Grid>
                             <Grid
                                 item

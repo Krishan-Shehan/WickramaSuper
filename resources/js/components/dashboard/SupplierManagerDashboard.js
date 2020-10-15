@@ -7,7 +7,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Header from "../header/Header";
 import Slider from "../slider/SupplierManagerSlider";
-
+import SupplierTable from "../tables/SupplierManager/SupplierTable";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -126,7 +126,7 @@ function SupplierManagerDashboard() {
                                 xl={3}
                                 xs={12}
                             >
-
+                            <SupplierTable />
                             </Grid>
 
                         </Grid>

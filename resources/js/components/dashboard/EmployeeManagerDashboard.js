@@ -7,8 +7,8 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Header from "../header/Header";
 import Slider from "../slider/EmployeeManagerSlider";
-import leaveTable from "../tables/EmployeeManager/leaveTable";
-import employeeTable from "../tables/EmployeeManager/employeeTable";
+import EmployeeTable from "../tables/EmployeeManager/EmployeeTable";
+import LeaveTable from "../tables/EmployeeManager/LeaveTable";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -129,7 +129,8 @@ function EmployeeManagerDashboard() {
                                 xl={3}
                                 xs={12}
                             >
-                                <employeeTable />
+                               <EmployeeTable />
+
                             </Grid>
 
                             <Grid
@@ -139,7 +140,7 @@ function EmployeeManagerDashboard() {
                                 xl={3}
                                 xs={12}
                             >
-                                <leaveTable />
+                                <LeaveTable />
                             </Grid>
                         </Grid>
                     </Container>

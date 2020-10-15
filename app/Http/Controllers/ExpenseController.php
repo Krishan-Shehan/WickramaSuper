@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Expense;
 use Illuminate\Http\Request;
-use App\Models\expense;
 
 class ExpenseController extends Controller
 {
@@ -14,8 +14,8 @@ class ExpenseController extends Controller
      */
     public function index()
     {
-        $expense = expense::all();
-               return $expense -> toJson();    //taking into array
+        $expenses = Expense::all();
+        return response()->json($expenses);
     }
 
     /**
@@ -23,10 +23,6 @@ class ExpenseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -36,51 +32,68 @@ class ExpenseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'amount' => 'required',
+            'description' => 'required' //optional if you want this to be required
+        ]);
+        $expense = Expense::create($request->all());
+        return response()->json(['message'=> 'expense created',
+            'expense' => $expense]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Expense  $expense
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Expense $expense)
     {
-        //
+        return $expense;
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Expense  $expense
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-    }
+
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Expense  $expense
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Expense $expense)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'amount' => 'required',
+            'description' => 'required' //optional if you want this to be required
+        ]);
+        $expense->update($request->all());
+
+        return response()->json([
+            'message' => 'expense updated!',
+            'expense' => $expense
+        ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Expense  $expense
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Expense $expense)
     {
-        //
+        $expense->delete();
+        return response()->json([
+            'message' => 'expense deleted'
+        ]);
     }
 }
