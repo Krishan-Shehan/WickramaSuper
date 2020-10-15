@@ -43,7 +43,7 @@ const tableIcons = {
 };
 
 const columns = [
-    {title: "ID", field: "customer_id"},
+    {title: "ID", field: "id"},
     {title: "Name", field: "name"},
     {title: "NIC", field: "NIC"},
     {title: "Email", field: "email"},
